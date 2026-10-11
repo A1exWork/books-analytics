@@ -1,24 +1,34 @@
 
-# Виртуальное окружение
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environment
 .venv/
 venv/
 
-# Кэш Python
-__pycache__/
-*.py[cod]
-
-# Секреты и переменные окружения
+# Secrets
 .env
+.env.*
+!.env.example
+*.pem
+*.key
 
-# Данные, логи и графики
+# Local data
 data/*.json
 logs/*.log
 reports/*.png
 
-# Настройки редактора
-.vscode/
+
+# IDE
+.vscode/*
+!.vscode/tasks.json
 .idea/
 
-# Системные файлы
+# System files
 .DS_Store
 Thumbs.db
