@@ -1,0 +1,11 @@
+
+services:
+  books-parser:
+    build: .
+    image: books-analytics:latest
+    container_name: books-analytics
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./reports:/app/reports
+    restart: "no"
