@@ -1,0 +1,24 @@
+
+# Виртуальное окружение
+.venv/
+venv/
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+
+# Секреты и переменные окружения
+.env
+
+# Данные, логи и графики
+data/*.json
+logs/*.log
+reports/*.png
+
+# Настройки редактора
+.vscode/
+.idea/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
